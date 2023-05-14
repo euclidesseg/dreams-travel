@@ -13,7 +13,6 @@
 }
 .sidebar .sidebar__header{
   display: flex;
-  width: calc(100% - 20);
   height: 150px;
 
 }
@@ -33,7 +32,6 @@
   margin: 5px;
 }
 .sidebar .sidebar__content{
-  width: calc(100% - 20);
   height: 100%;
   transition: var(--trans-5);
 }
@@ -49,15 +47,15 @@
   width: auto;
   margin-bottom: 2px;
   padding: 2px 8px 2px 18px;
-  font-size: 1.2rem;
+  font-size:var(--size-letter-1);
   font-family: var(--font-familiy);
   cursor: pointer;
   transition: var(--trans-5);
   border-radius: 5px;
 }
 .sidebar .sidebar__items .item:hover, .header__toggle :hover{
-  background-color: rgb(208, 204, 204);
-  transition: var(--trans-2);
+  background-color: var(--sidebar-options);
+  font-weight: 600;
 }
 
 .sidebar .sidebar__items i{
@@ -70,6 +68,8 @@
 /* router-outlet */
 .sidebar + .home{
   height: 100%;
+  width: calc(100% - 260px);
+  padding: px;
   margin-left: 260px;
   position: fixed;
   transition: var(--trans-2);
@@ -82,6 +82,7 @@
 }
 .close__sidebar + .home{
   margin-left: 70px;
+  width: calc(100% - 70px);
   transition: var(--trans-2);
 }
 .close__sidebar .sidebar__items span{

@@ -14,6 +14,11 @@
     --sidebar-color: #ffff;
     --bodi-color: #e4e9f7;
 
+    /* backgrounds */
+    --sidebar-options:#d3e0f6;
+
+    /* fontZise */
+    --size-letter-1: 1rem
   }
 
 
@@ -23,5 +28,6 @@ body, html{
 }
 body{
   background-color: var(--sidebar-color);
+  opacity: 4;
 }
 

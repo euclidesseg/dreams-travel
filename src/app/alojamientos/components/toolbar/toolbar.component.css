@@ -1,0 +1,42 @@
+.toolbar{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid rgb(168, 163, 163);
+  margin-left: 1px;
+}
+
+.toolbar__option{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar .toolbar__option .login, .logo{
+  height: 50px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2px;
+}
+.toolbar .toolbar__option .login:hover{
+  background-color: var(--sidebar-options);
+}
+
+.toolbar__option .login .login__text{
+  font-size: var(--size-letter-1);
+  font-family: var( --font-familiy);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .login__text i{
+  margin-right: 5px;
+}
