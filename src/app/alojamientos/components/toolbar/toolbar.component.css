@@ -38,5 +38,6 @@
   justify-content: center;
 }
 .login .login__text i{
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-bottom: 3px;
 }

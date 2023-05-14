@@ -69,7 +69,6 @@
 .sidebar + .home{
   height: 100%;
   width: calc(100% - 260px);
-  padding: px;
   margin-left: 260px;
   position: fixed;
   transition: var(--trans-2);
