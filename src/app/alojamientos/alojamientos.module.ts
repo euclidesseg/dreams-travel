@@ -5,6 +5,9 @@ import { ReservePageComponent } from './pages/reserve-page/reserve-page.componen
 import { AlojamientosRoutingModule } from './alojamientos.routing.module';
 import { NuevaHabitacionComponent } from './pages/nueva-habitacion/nueva-habitacion.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { HabitacionService } from './services/habitacion.service';
+import { MaterialModule } from '../material/material.module';
+import { HabitacionCardComponent } from './components/habitacion-card/habitacion-card.component';
 
 
 
@@ -13,16 +16,21 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     NuevaHabitacionComponent,
     LayoutPageComponent,
     ReservePageComponent,
-    ToolbarComponent
-  ],
-  imports: [
-    AlojamientosRoutingModule,
-    CommonModule,
-
+    ToolbarComponent,
+    HabitacionCardComponent
   ],
   exports:[
     LayoutPageComponent,
     ReservePageComponent
+  ],
+  imports: [
+    AlojamientosRoutingModule,
+    CommonModule,
+    MaterialModule
+
+  ],
+  providers:[
+    HabitacionService
   ]
 })
 export class AlojamientosModule { }
